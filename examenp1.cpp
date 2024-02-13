@@ -35,15 +35,13 @@ int main ()
     Circulo circulo3;
     circulo3={40,30,3};
 
-    cout<<"Circulo 1 area: " <<circulo1.getArea() << " u^2" <<endl;
-    cout<<"Circulo 2 area: " << circulo2.getArea() << " u^2" <<endl;
-    cout<<"Circulo 3 area: " << circulo3.getArea() << " u^2" <<endl;
-
-    cout<<endl;
+    cout<<"Circulo 1 area: " <<circulo1.getArea() << "u^2" <<endl;
+    cout<<"Circulo 2 area: " << circulo2.getArea() << "u^2" <<endl;
+    cout<<"Circulo 3 area: " << circulo3.getArea() << "u^2" <<endl;
 
     cout<< "Circulo 1 y 2: "; circulo1.intersects(circulo2);
-    cout<< "Circulo 1 y 3: "; circulo3.intersects(circulo1);
     cout<< "Circulo 2 y 3: "; circulo2.intersects(circulo3);
+    cout<< "Circulo 3 y 1: "; circulo3.intersects(circulo1);
     cout<<endl;
 
     return 0;
